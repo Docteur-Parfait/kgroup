@@ -1,0 +1,101 @@
+@import "/vendor/filament/filament/resources/css/theme.css";
+
+@config 'tailwind.config.js';
+
+@layer components {
+    .fi-sidebar-header {
+        /* @apply bg-blue !important; */
+    }
+
+    .fi-sidebar-item-active,
+    .fi-sidebar-item-active:hover {
+        a {
+            @apply bg-blue !important;
+
+            span,
+            svg {
+                @apply text-white !important;
+            }
+
+            .fi-badge {
+                span {
+                    @apply text-blue !important;
+                }
+            }
+        }
+    }
+
+    .fi-sidebar-item:hover {
+        a {
+            background-color: #151576;
+
+            span,
+            svg {
+                @apply text-white !important;
+            }
+
+            .fi-badge {
+                span {
+                    @apply text-blue !important;
+                }
+            }
+        }
+    }
+
+    .fi-sidebar-item {
+        a {
+
+            span,
+            svg {
+                color: black;
+            }
+        }
+    }
+
+    .fi-topbar nav {
+        @apply bg-blue !important;
+    }
+
+    .fi-simple-main,
+    .fi-wi-stats-overview-stat {
+        @apply border-t-2 border-blue;
+    }
+
+    .fi-sidebar-header,
+    .fi-topbar {
+        .fi-icon-btn svg {}
+    }
+
+    .fi-ac svg {
+        color: black;
+    }
+
+    .fi-ta-cell,
+    .fi-ta-header-cell {
+        border: 0.5px solid rgb(236, 236, 236) !important;
+    }
+
+    .fi-badge {
+        border: 1px !important;
+    }
+
+    .fi-btn {
+        svg {
+            @apply text-white;
+        }
+    }
+
+    .fi-section-header {
+        @apply bg-blue;
+
+        border-radius: 10px 10px 0 0;
+
+        .fi-section-header-heading {
+            @apply text-white;
+        }
+    }
+
+    .fi-btn-color-success {
+        @apply bg-green !important;
+    }
+}
